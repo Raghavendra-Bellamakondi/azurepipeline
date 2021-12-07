@@ -35,5 +35,10 @@ namespace TestApplication.Controllers
             })
             .ToArray();
         }
+        [HttpGet]
+        public string GetMyName(string name)
+        {
+            return String.Format("Hi {0}",name);
+        }
     }
 }
